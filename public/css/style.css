@@ -1,0 +1,30 @@
+.bar{
+    background-image: linear-gradient(90deg, white 90%, red 0%);
+    position: absolute;
+    top:20%;
+    left:90%;
+}
+.box {
+-webkit-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
+box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
+border : 1px solid #8886;
+}
+
+.btn-black {
+    color:white;
+    background-color: black;
+    cursor: pointer;
+}
+.btn-black:hover {
+    color: black;
+    background-color: white;
+    cursor: pointer;
+    border: 1px solid black;
+}
+.bix {
+    border: 1px solid #8886;
+}
+em{
+    color: #888;
+}
