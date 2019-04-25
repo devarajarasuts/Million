@@ -1,1 +1,8 @@
-All files except images are uploaded so far images will be uploaded by tom maximum.
+Open porject in VS Code --
+Open Terminal --
+Type in "npm install"
+Type in "npm run nodemon"
+Go to Browser --
+Type in "localhost:3000"
+
+3-pages done so far careers / artciles / contact us along with the footer.
