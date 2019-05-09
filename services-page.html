@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <title>Document</title>
+    <style>
+/* Copy This to your style.css file */
+    .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    color: #fff;
+    background-color: rgba(21, 64, 240, 0.75); 
+    }
+    .pill-default {
+        color: rgba(0, 0, 0, 0.85);
+        -webkit-box-shadow: 0px 0px 1px 0px rgba(0,0,0,0.75);
+        -moz-box-shadow: 0px 0px 1px 0px rgba(0,0,0,0.75);
+        box-shadow: 0px 0px 1px 0px rgba(0,0,0,0.75);
+        width: 200px;
+    }
+    .box-form {
+        -webkit-box-shadow: 0px 0px 1px 0px rgba(0,0,0,0.35);
+        -moz-box-shadow: 0px 0px 1px 0px rgba(0,0,0,0.35);
+        box-shadow: 0px 0px 1px 0px rgba(0,0,0,0.35);
+    }
+/*Stop Copying Here*/
+    </style>
+</head>
+<body>
+<!-- Copy From Here -->
+<div class="container">
+    <h2 class="py-sm-3">Which MillionGenie<br> Service are you looking for?</h2>
+<div class="row justify-content-center d-flex my-sm-3">
+<ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+        <li class="nav-item mx-sm-4">
+          <a class="nav-link active pill-default" id="pills-organize-blood-tab" data-toggle="pill" href="#pills-organize-blood" role="tab" aria-controls="pills-organize-blood" aria-selected="true"><i class="fas fa-microscope"></i><br>ORGANIZE BLOOD<br> CAMPS</a>
+        </li>
+        <li class="nav-item mx-sm-4">
+          <a class="nav-link pill-default" id="pills-blood-donation-tab" data-toggle="pill" href="#pills-blood-donation" role="tab" aria-controls="pills-blood-donation" aria-selected="false"><i class="fas fa-handshake"></i><br>SPONSOR BLOOD <br>DONATION CAMP</a>
+        </li>
+        <li class="nav-item mx-sm-4">
+          <a class="nav-link pill-default" id="pills-lifesave-tab" data-toggle="pill" href="#pills-lifesave" role="tab" aria-controls="pills-lifesave" aria-selected="false"><i class="fas fa-hiking"></i><br>BE A LIFESAVE <br> BLOOD DONOR</a>
+        </li>
+        <li class="nav-item mx-sm-4">
+          <a class="nav-link pill-default" id="pills-request-blood-tab" data-toggle="pill" href="#pills-request-blood" role="tab" aria-controls="pills-request-blood" aria-selected="false"><i class="fas fa-tint"></i><br>REQUEST FOR<br> BLOOD DONOR</a>
+        </li>
+      </ul>
+      <div class="tab-content" id="pills-tabContent">
+        <div class="tab-pane fade show active" id="pills-organize-blood" role="tabpanel" aria-labelledby="pills-organize-blood-tab">
+            <div class="col-sm-12 justify-content-center d-flex">
+            <div class="w-50 text-center box-form px-sm-5 py-sm-4">
+                <h5 class="py-sm-4">Please Fill Out the form below to help us <br> connect you to the blood camp</h5>
+                <form> 
+                        <div class="form-row">
+                          <div class="form-group col-md-12 text-left">
+                            <label for="blood-donation-camp-name">Blood Donation Camp Name*</label>
+                            <input type="text" class="form-control" id="blood-donation-camp-name4" placeholder="" required>
+                          </div>
+                          <div class="form-group col-md-12 text-left">
+                            <label for="blood-camp-message">Blood Camp Message</label>
+                            <input type="text" class="form-control" id="blood-camp-message" placeholder="">
+                          </div>
+                          <div class="form-group col-md-6 text-left">
+                                <label for="organizer-name">Organizer Name*</label>
+                                <input type="text" class="form-control" id="organizer-name" placeholder="" required>
+                         </div>
+                          <div class="form-group col-md-6 text-left">
+                                <label for="organizer-phone-number">Organizer Phone Number*</label>
+                                <input type="text" class="form-control" id="organizer-phone-number" placeholder="" required>
+                         </div>
+                         <div class="form-group col-md-12 text-left">
+                         <label for="date-for-blood-donation-camp">Date For Blood Donation Camp* &nbsp;&nbsp;</label>
+                         <input type="date" id="date-for-blood-donation-camp" value="2019-05-10" min="2019-05-10" max="2099-12-31">
+                         </div>
+                         <div class="form-group col-md-12 text-left">
+                            <button type="submit" class="btn btn-primary px-sm-5">SUBMIT</button>   
+                         </div>                                       
+                        </div>
+                      </form> 
+            </div></div></div>
+        <div class="tab-pane fade" id="pills-blood-donation" role="tabpanel" aria-labelledby="pills-blood-donation-tab">
+            <div class="col-sm-12 justify-content-center d-flex">
+            <div class="w-50 text-center box-form px-sm-5 py-sm-4">
+                <h5 class="py-sm-4">Please Fill Out the form below to help us <br> connect you to the <br> blood camp organizer</h5>
+                <form> 
+                        <div class="form-row">
+                          <div class="form-group col-md-6 text-left">
+                            <label for="fullName">Full Name*</label>
+                            <input type="text" class="form-control" id="fullName" placeholder="" required>
+                          </div>
+                          <div class="form-group col-md-6 text-left">
+                            <label for="contactNumber">Contact Number*</label>
+                            <input type="number" class="form-control" id="contactNumber" placeholder="" required>
+                          </div>
+                          <div class="form-group col-md-6 text-left">
+                                <label for="organization-name">Organization Name(Optional)</label>
+                                <input type="text" class="form-control" id="organization-name" placeholder="" required>
+                         </div>
+                          <div class="form-group col-md-6 text-left">
+                                <label for="city">City*</label>
+                                <input type="text" class="form-control" id="city" placeholder="" required>
+                         </div>
+                         <div class="form-group col-md-6 text-left">
+                            <button type="submit" class="btn btn-primary px-sm-5">SUBMIT</button>   
+                         </div>                                       
+                        </div>
+                      </form>       
+            </div></div></div>
+        <div class="tab-pane fade" id="pills-lifesave" role="tabpanel" aria-labelledby="pills-lifesave-tab">
+            <div class="col-sm-12 justify-content-center d-flex">
+            <div class="w-50 text-center box-form px-sm-5 py-sm-4">
+                                <h5 class="py-sm-4">Please Fill Out the form below to help us <br> connect you to the nearest blood donors</h5>
+                                <form> 
+                                        <div class="form-row">
+                                          <div class="form-group col-md-6 text-left">
+                                            <label for="firstName">FirstName*</label>
+                                            <input type="text" class="form-control" id="firstName" placeholder="" required>
+                                          </div>
+                                          <div class="form-group col-md-6 text-left">
+                                                <label for="lastName">LastName*</label>
+                                                <input type="text" class="form-control" id="lastName" placeholder="" required>
+                                          </div>
+                                          <div class="form-group col-md-6 text-left">
+                                            <label for="phoneNumber">Phone Number*</label>
+                                            <input type="text" class="form-control" id="phoneNumber" placeholder="" required>
+                                          </div>
+                                          <div class="form-group col-md-6 text-left">
+                                                <label for="bloodGroup">Blood Group*</label>
+                                                <input type="text" class="form-control" id="bloodGroup" placeholder="" required>
+                                         </div>
+                                          <div class="form-group col-md-6 text-left">
+                                                <label for="emailID">Email*</label>
+                                                <input type="email" class="form-control" id="emailID" placeholder="" required>
+                                         </div>
+                                         <div class="form-group col-md-6 text-left">
+                                                <label for="country">Country*</label>
+                                                <input type="text" class="form-control" id="country" placeholder="" required>
+                                         </div>
+                                         <div class="form-group col-md-6 text-left">
+                                                <label for="state">State*</label>
+                                                <input type="text" class="form-control" id="state" placeholder="" required>
+                                         </div>
+                                         <div class="form-group col-md-6 text-left">
+                                                <label for="city">City*</label>
+                                                <input type="text" class="form-control" id="city" placeholder="" required>
+                                         </div>
+                                         <div class="form-group col-md-12 text-left">
+                                                <label for="date-for-blood-donation-camp">Date For Last Blood Donation* &nbsp;&nbsp;</label>
+                                                <input type="date" id="date-for-blood-donation-camp" value="2019-05-10" min="2019-05-10" max="2099-12-31">
+                                         </div>
+                                         <div class="form-group col-md-6 text-left">
+                                            <button type="submit" class="btn btn-primary px-sm-5">SUBMIT</button>   
+                                         </div>                                       
+                                        </div>
+                                      </form>       
+                            </div></div></div>
+        <div class="tab-pane fade" id="pills-request-blood" role="tabpanel" aria-labelledby="pills-request-blood-tab">
+            <div class="col-sm-12 justify-content-center d-flex">
+            <div class="w-50 text-center box-form px-sm-5 py-sm-4">
+                                    <h5 class="py-sm-4">Please Fill Out the form below to help us <br> connect you to the nearest blood donors</h5>
+                                    <form> 
+                                            <div class="form-row">
+                                              <div class="form-group col-md-6 text-left">
+                                                <label for="inputEmail4">FirstName*</label>
+                                                <input type="email" class="form-control" id="inputEmail4" placeholder="Email" required>
+                                              </div>
+                                              <div class="form-group col-md-6 text-left">
+                                                <label for="inputPassword4">Phone Number*</label>
+                                                <input type="password" class="form-control" id="inputPassword4" placeholder="Password" required>
+                                              </div>
+                                              <div class="form-group col-md-6 text-left">
+                                                    <label for="inputPassword4">Blood Group*</label>
+                                                    <input type="password" class="form-control" id="inputPassword4" placeholder="Password" required>
+                                             </div>
+                                              <div class="form-group col-md-6 text-left">
+                                                    <label for="inputEmail4">Email*</label>
+                                                    <input type="email" class="form-control" id="inputEmail4" placeholder="Email" required>
+                                             </div>
+                                             <div class="form-group col-md-6 text-left">
+                                                <button type="submit" class="btn btn-primary px-sm-5">SUBMIT</button>   
+                                             </div>                                       
+                                            </div>
+                                        </form>       
+                            </div></div></div>
+      </div>
+    </div>
+</div>
+<!-- Sop Copying Here -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
